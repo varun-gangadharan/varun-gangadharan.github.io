@@ -2189,3 +2189,37 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* Style for projects */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.project-item {
+    list-style-type: none; /* Remove bullet points */
+    margin-bottom: 2rem; /* Adjust spacing here */
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: background 0.3s;
+}
+
+.project-item:hover {
+    background: #f0f0f0;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+.project-item p {
+    margin: 1rem 0;
+}
+
+.project-item .button {
+    margin-top: 1rem;
+}

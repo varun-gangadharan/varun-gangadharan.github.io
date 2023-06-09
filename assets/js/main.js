@@ -59,19 +59,21 @@
 
 				// Get panel, link.
 					if (window.location.hash) {
-
-				 		$panel = $panels.filter(window.location.hash);
+						$panel = $panels.filter(window.location.hash);
 						$link = $nav_links.filter('[href="' + window.location.hash + '"]');
-
 					}
-
-				// No panel/link? Default to first.
+					
+					// No panel/link? Default to first.
 					if (!$panel
 					||	$panel.length == 0) {
-
 						$panel = $panels.first();
-						$link = $nav_links.first();
-
+					
+						// Check if the current page is the projects page.
+						if (window.location.pathname.endsWith('projects.html')) {
+							$link = $nav_links.filter('[href="projects.html"]');
+						} else {
+							$link = $nav_links.first();
+						}
 					}
 
 				// Deactivate all panels except this one.
@@ -208,5 +210,7 @@
 				});
 
 		}
+
+		
 
 })(jQuery);
