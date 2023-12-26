@@ -2272,3 +2272,38 @@ input, select, textarea {
     background-color: #f68a77; /* This should be your smoky peach color. Replace with the right hex if needed. */
 }
 
+/* Research Paper Styling */
+#research .project-item {
+    background: #fde4e1; /* Soft peach background for aesthetic alignment */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+#research .project-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover for a dynamic feel */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+#research .project-title {
+    color: #c06c84; /* A shade of pink that complements the peach background */
+    margin-bottom: 15px; /* Spacing for clarity */
+}
+
+#research .project-description {
+    color: #555; /* A darker color for readability */
+    font-size: 0.9em; /* Slightly smaller font for a neat appearance */
+}
+
+#research .project-links .button {
+    background-color: #f68a77; /* Peachy button color */
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Transition for button hover effect */
+}
+
+#research .project-links .button:hover {
+    background-color: #e05656; /* Darker shade on hover */
+}
+
