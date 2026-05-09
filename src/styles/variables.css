@@ -1,0 +1,29 @@
+:root {
+  --bg: #F7F3ED;
+  --text: #111111;
+  --muted: #6E6A64;
+  --line: #D8D0C6;
+  --accent: #D98AA7;
+  --signal: #E12828;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  --max-width: 1200px;
+  --nav-height: 3.5rem;
+}
+
+[data-theme='dark'] {
+  --bg: #0D0D0D;
+  --text: #F3EEE7;
+  --muted: #A59E96;
+  --line: #2A2724;
+  --accent: #D98AA7;
+  --signal: #E12828;
+}
