@@ -1,0 +1,177 @@
+% Resume in Latex
+% Author: Jake Gutierrez
+% Modified by: Varun Gangadharan
+% License : MIT
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Varun Gangadharan} \\ \vspace{1pt}
+    \href{mailto:varun.gangadharan.63@gmail.com}{\underline{Email}} $|$
+    \href{https://varungangadharan.com/}{\underline{Website}} $|$
+    \href{https://github.com/varun-gangadharan}{\underline{GitHub}} $|$
+    \href{https://www.linkedin.com/in/varung63/}{\underline{LinkedIn}}
+\end{center}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages}{: Go, Python, JavaScript/TypeScript, C++, Java, C, SQL, Bash} \\
+\textbf{Technologies \& Frameworks}{: HashiCorp Vault, Kubernetes, Docker, React, Node.js, Django, Supabase, AWS, Azure DevOps, Git} \\
+}}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Software Engineer I}{Jul. 2024 -- Present}
+{\textbf{GEICO} $|$ Go, TypeScript, HashiCorp Vault, React, Kubernetes, Docker}{Chevy Chase, MD}
+\resumeItemListStart
+\resumeItem{\textbf{Spearheaded end-to-end design and development} of SecretShare, a Slack app for secure one-time secret sharing adopted across GEICO engineering (4,000+ users) with 100+ daily interactions.}
+\resumeItem{Extended SecretShare into a programmatic API-key delivery service for LLM workflows, integrating an MCP-compatible interface with secure one-time retrieval, Vault-backed storage, and auditable access patterns.}
+\resumeItem{Architected and shipped core GEICO Secrets Platform capabilities enabling secure secrets management for 150+ engineering teams across the organization.}
+\resumeItem{Built production-grade Vault integrations for JWT/OIDC auth, token caching/refresh, response wrapping, and least-privilege secret access across internal developer tooling.}
+\resumeItem{Developed full-stack features with Go services and a React UI, deploying through Kubernetes and Azure DevOps CI/CD with automated TLS certificate management.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Fullstack Software Engineer Intern}{May 2023 -- Aug. 2023}
+{\textbf{Flow AI} $|$ Python, ReactJS, SQL, Django, AWS}{Austin, TX}
+\resumeItemListStart
+\resumeItem{Increased system throughput by 29\% by engineering a Python/Django load-balancing solution supporting 1,200+ daily API requests with zero interruptions.}
+\resumeItem{Optimized SQL queries to reduce data retrieval time by 14\%, improving workflows for 7 sales agents.}
+\resumeItem{Supported service migration to AWS, improving reliability to 99.5\% uptime and projecting an 11\% reduction in server costs.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Software Engineer Intern}{Jun. 2022 -- Aug. 2022}
+{\textbf{Leidos} $|$ Python, Kornshell, Bash, Docker}{Gaithersburg, MD}
+\resumeItemListStart
+\resumeItem{Modernized a legacy API backend, improving response time by 26\% and reducing technical debt through refactoring and automation.}
+\resumeItem{Built Python-based parallel tracking to monitor 1,900 aircraft simultaneously, improving real-time decision support for en route controllers.}
+\resumeItem{Coordinated a zero-downtime migration across four teams with structured rollout communication for 300+ users.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Illinois Urbana-Champaign}{Aug. 2023 -- May 2024}
+{M.S. Computer Science}{}
+\resumeSubheading
+{University of Illinois Urbana-Champaign}{Aug. 2020 -- May 2023}
+{B.S. Computer Science; GPA: 3.7/4.0}{}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{VarCapsule} $|$ \href{https://github.com/varun-gangadharan/time-capsule}{\underline{GitHub}} $|$ \href{https://varcapsule.xyz/}{\underline{Live}} $|$ \textit{React, TypeScript, Supabase, Vercel, Resend}}{2026}
+\resumeItemListStart
+\resumeItem{Built and deployed a digital time capsule app for sealed messages, private archives, email sharing, OTP verification, and scheduled notification emails.}
+\resumeItem{Designed server-enforced locking with Supabase Postgres views, RLS policies, and RPC functions so sealed capsule contents are redacted until the unlock date.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{FitCheck} $|$ \href{https://github.com/varun-gangadharan/fitcheck}{\underline{GitHub}} $|$ \textit{JavaScript, Chrome MV3, Node.js, Firecrawl}}{2026}
+\resumeItemListStart
+\resumeItem{Built a Chrome extension that analyzes fashion product pages and returns personalized fit-risk scores and size recommendations using measurements, brand history, and web evidence.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{NutriGenie} $|$ \href{https://github.com/varun-gangadharan/NutritionChatbot}{\underline{GitHub}} $|$ \textit{OpenAI API, LlamaIndex, RAG, Python}}{2024}
+\resumeItemListStart
+\resumeItem{Developed a retrieval-augmented nutrition assistant that generates deficiency-aware dietary guidance from indexed nutrition sources with cited responses.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{BrawlMetric} $|$ \href{https://github.com/varun-gangadharan/brawl-metrics}{\underline{GitHub}} $|$ \textit{React, Node.js, MongoDB, API Integration}}{2024}
+\resumeItemListStart
+\resumeItem{Built a Brawl Stars analytics dashboard with player lookup, stat tracking, leaderboard views, and recommendation workflows powered by external game API data.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

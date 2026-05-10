@@ -12,15 +12,16 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '001',
-    title: 'Time Capsule',
+    title: 'VarCapsule',
     category: 'Full-stack App',
     year: '2026',
     summary:
-      'Digital time capsule with server-enforced locking — messages sealed to a future date, shared via email with OTP verification. Retro design system with chunky borders and paper textures.',
-    stack: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
+      'Digital time capsule with server-enforced locking: sealed messages, private archives, email sharing, OTP verification, and scheduled notification emails.',
+    stack: ['React', 'TypeScript', 'Supabase', 'Vercel', 'Resend'],
     tags: ['Full-stack'],
     links: [
       { label: 'GitHub', url: 'https://github.com/varun-gangadharan/time-capsule' },
+      { label: 'Live', url: 'https://varcapsule.xyz' },
     ],
   },
   {
@@ -70,7 +71,7 @@ export const projects: Project[] = [
     year: '2024',
     summary:
       'Strategy companion for Brawl Stars players, combining recommendations, leaderboards, and player-context insights.',
-    stack: ['React', 'Node.js', 'API Integration'],
+    stack: ['React', 'Node.js', 'MongoDB', 'API Integration'],
     tags: ['Full-stack'],
     links: [
       { label: 'GitHub', url: 'https://github.com/varun-gangadharan/brawl-metrics' },
