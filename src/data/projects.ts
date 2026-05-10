@@ -14,7 +14,7 @@ export const projects: Project[] = [
     id: '001',
     title: 'Time Capsule',
     category: 'Full-stack App',
-    year: '2025',
+    year: '2026',
     summary:
       'Digital time capsule with server-enforced locking — messages sealed to a future date, shared via email with OTP verification. Retro design system with chunky borders and paper textures.',
     stack: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     id: '002',
     title: 'FitCheck',
     category: 'Chrome Extension',
-    year: '2025',
+    year: '2026',
     summary:
       'Browser extension generating personalized fit-risk scores on fashion product pages — sizing recommendations derived from body measurements, brand history, and web-sourced evidence.',
     stack: ['JavaScript', 'Chrome MV3', 'Node.js', 'Firecrawl'],
