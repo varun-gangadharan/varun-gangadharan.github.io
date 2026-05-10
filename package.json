@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp index.html dist/index.html && mkdir -p site-assets && cp -f dist/site-assets/app.css site-assets/app.css && cp -f dist/site-assets/app.js site-assets/app.js",
+    "build": "vite build && cp index.html dist/index.html && mkdir -p site-assets && cp -f dist/site-assets/app.css site-assets/app.css && cp -f dist/site-assets/app.js site-assets/app.js && mkdir -p images && cp -f public/images/* images/",
     "preview": "vite preview"
   },
   "dependencies": {
