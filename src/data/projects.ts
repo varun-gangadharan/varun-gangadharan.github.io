@@ -18,10 +18,9 @@ export const projects: Project[] = [
     summary:
       'Digital time capsule with server-enforced locking — messages sealed to a future date, shared via email with OTP verification. Retro design system with chunky borders and paper textures.',
     stack: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
-    tags: ['Full-stack', 'Live'],
+    tags: ['Full-stack'],
     links: [
       { label: 'GitHub', url: 'https://github.com/varun-gangadharan/time-capsule' },
-      { label: 'Live', url: 'https://varcapsule.xyz' },
     ],
   },
   {
@@ -92,4 +91,4 @@ export const projects: Project[] = [
   },
 ]
 
-export const allTags = ['All', 'AI', 'Full-stack', 'Research', 'NLP', 'Live']
+export const allTags = ['All', 'AI', 'Full-stack', 'Research', 'NLP']

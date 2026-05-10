@@ -20,7 +20,7 @@
       if (useProductionBundle) {
         const stylesheet = document.createElement("link");
         stylesheet.rel = "stylesheet";
-        stylesheet.href = "/site-assets/app.css";
+        stylesheet.href = "/site-assets/app.css?v=ff314ba7cb";
         document.head.appendChild(stylesheet);
       }
     </script>
@@ -36,7 +36,7 @@
       ]);
 
       const useProductionBundle = productionHosts.has(window.location.hostname);
-      const entry = useProductionBundle ? "/site-assets/app.js" : "/src/main.tsx";
+      const entry = useProductionBundle ? "/site-assets/app.js?v=9ee1382c74" : "/src/main.tsx";
 
       import(entry);
     </script>
