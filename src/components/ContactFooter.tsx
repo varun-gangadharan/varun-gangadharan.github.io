@@ -13,6 +13,8 @@ export default function ContactFooter() {
           </a>
 
           <div className={styles.links}>
+            <a href={profile.phoneHref}>{profile.phone}</a>
+            <span className={styles.sep}>/</span>
             <a href={profile.github} target="_blank" rel="noopener noreferrer">
               GitHub
             </a>

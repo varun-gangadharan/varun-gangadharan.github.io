@@ -47,6 +47,7 @@ export default function HeroIndex() {
             <span className={styles.sep}>/</span>
             <a href={profile.resumePdf} target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
+          <a href={profile.phoneHref} className={styles.phone}>{profile.phone}</a>
           <p className={styles.location}>01 / Index</p>
         </div>
       </div>
