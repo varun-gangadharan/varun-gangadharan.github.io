@@ -40,7 +40,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Ensure generated PDF is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -84,16 +84,16 @@
     \textbf{\Huge \scshape Varun Gangadharan} \\ \vspace{1pt}
     \href{mailto:varun.gangadharan.63@gmail.com}{\underline{Email}} $|$
     \href{https://varungangadharan.com/}{\underline{Website}} $|$
-    \href{https://github.com/varun-gangadharan}{\underline{GitHub}} $|$
+    \href{https://github.com/varun-gangadharan}{\underline{Github}} $|$
     \href{https://www.linkedin.com/in/varung63/}{\underline{LinkedIn}}
 \end{center}
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
+\begin{itemize}[leftmargin=0.10in, label={}, topsep=2pt, itemsep=0pt]
 \small{\item{
-\textbf{Languages}{: Go, Python, JavaScript/TypeScript, C++, Java, C, SQL, Bash} \\
-\textbf{Technologies \& Frameworks}{: HashiCorp Vault, Kubernetes, Docker, React, Node.js, Django, Supabase, AWS, Azure DevOps, Git} \\
+\textbf{Languages:} Go, Python, JavaScript/TypeScript, C++, Java, C, SQL, Bash \\
+\textbf{Tech:} HashiCorp Vault, Kubernetes, Docker, MCP, React, Next.js, Node.js, PostgreSQL, AWS, Azure DevOps
 }}
 \end{itemize}
 
@@ -137,10 +137,10 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {University of Illinois Urbana-Champaign}{Aug. 2023 -- May 2024}
-{M.S. Computer Science}{}
+{MSc. Computer Science}{}
 \resumeSubheading
 {University of Illinois Urbana-Champaign}{Aug. 2020 -- May 2023}
-{B.S. Computer Science; GPA: 3.7/4.0}{}
+{BSc. Computer Science; GPA: 3.7/4.0}{}
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
@@ -148,28 +148,21 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{VarCapsule} $|$ \href{https://github.com/varun-gangadharan/time-capsule}{\underline{GitHub}} $|$ \href{https://varcapsule.xyz/}{\underline{Live}} $|$ \textit{React, TypeScript, Supabase, Vercel, Resend}}{2026}
+{\textbf{\underline{\href{https://runman-pied.vercel.app/}{Runman}}} $+$ \textbf{\underline{\href{https://github.com/varun-gangadharan/runcoach}{RunCoach}}} $|$ \textit{TypeScript, Node.js, MCP, PostgreSQL, React, Vercel}}{2026}
 \resumeItemListStart
-\resumeItem{Built and deployed a digital time capsule app for sealed messages, private archives, email sharing, OTP verification, and scheduled notification emails.}
-\resumeItem{Designed server-enforced locking with Supabase Postgres views, RLS policies, and RPC functions so sealed capsule contents are redacted until the unlock date.}
+\resumeItem{Built and deployed a Strava training-analytics platform plus RunCoach, an MCP server exposing its fixture-tested TypeScript science core as five LLM-callable tools over RLS-enforced Postgres and hashed per-athlete API keys.}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{FitCheck} $|$ \href{https://github.com/varun-gangadharan/fitcheck}{\underline{GitHub}} $|$ \textit{JavaScript, Chrome MV3, Node.js, Firecrawl}}{2026}
+{\textbf{\underline{\href{https://github.com/varun-gangadharan/long-box}{Long Box}}} $|$ \textit{Next.js, TypeScript, PostgreSQL, Supabase, Tailwind}}{2026}
 \resumeItemListStart
-\resumeItem{Built a Chrome extension that analyzes fashion product pages and returns personalized fit-risk scores and size recommendations using measurements, brand history, and web evidence.}
+\resumeItem{Built an explainable comic reading-path engine turning multi-character queries into ranked entry points, with ComicVine data normalized into Postgres, set intersection in SQL, and inspectable ranking reasons.}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{NutriGenie} $|$ \href{https://github.com/varun-gangadharan/NutritionChatbot}{\underline{GitHub}} $|$ \textit{OpenAI API, LlamaIndex, RAG, Python}}{2024}
+{\textbf{\underline{\href{https://varcapsule.xyz/}{varCapsule}}} $|$ \textit{React, TypeScript, Supabase, Vercel, Resend}}{2026}
 \resumeItemListStart
-\resumeItem{Developed a retrieval-augmented nutrition assistant that generates deficiency-aware dietary guidance from indexed nutrition sources with cited responses.}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{BrawlMetric} $|$ \href{https://github.com/varun-gangadharan/brawl-metrics}{\underline{GitHub}} $|$ \textit{React, Node.js, MongoDB, API Integration}}{2024}
-\resumeItemListStart
-\resumeItem{Built a Brawl Stars analytics dashboard with player lookup, stat tracking, leaderboard views, and recommendation workflows powered by external game API data.}
+\resumeItem{Built and deployed a retro-styled digital time capsule app with server-enforced locking: Supabase views, RLS policies, and RPC functions redact sealed contents until the unlock date.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd

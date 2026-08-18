@@ -10,16 +10,20 @@ export const profile = {
   resumePdf: '/assets/varun_gangadharan_resume.pdf',
   skills: [
     {
-      group: 'AI / ML',
-      items: ['OpenAI API', 'RAG', 'LlamaIndex', 'TensorFlow', 'PyTorch', 'NLP'],
+      group: 'AI / Agents',
+      items: ['MCP', 'LLM Tooling', 'RAG', 'OpenAI API', 'LlamaIndex', 'NLP'],
+    },
+    {
+      group: 'Languages',
+      items: ['Go', 'TypeScript', 'Python', 'C++', 'Java', 'SQL'],
     },
     {
       group: 'Frontend',
-      items: ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'UI Systems'],
+      items: ['React', 'Next.js', 'Vite', 'CSS Architecture', 'UI Systems'],
     },
     {
-      group: 'Backend / Data',
-      items: ['Python', 'Flask', 'Node.js', 'APIs', 'Docker'],
+      group: 'Backend / Infra',
+      items: ['Node.js', 'Django', 'PostgreSQL', 'Supabase', 'HashiCorp Vault', 'Kubernetes', 'Docker'],
     },
     {
       group: 'Research',
