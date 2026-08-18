@@ -4,6 +4,7 @@ export interface Project {
   category: string
   year: string
   summary: string
+  featured?: boolean
   stack: string[]
   tags: string[]
   links: { label: string; url: string }[]
@@ -16,7 +17,8 @@ export const projects: Project[] = [
     category: 'Platform + MCP Server',
     year: '2026',
     summary:
-      'Strava training analytics that shows its work. The training science lives in a standalone, fixture-tested TypeScript package — Banister TRIMP load scoring, world-record-screened race prediction, athlete-specific HR zones — and every number reports which activities produced it, how it was derived, and how much to trust it. RunCoach exposes that same engine as MCP tools, so an assistant answers "should I back off this week" from recorded activity data instead of plausible guesses. One shared fixture set tests both surfaces, so the dashboard and the LLM cannot drift apart.',
+      'I love running, so I built a training dashboard and MCP server that use my real activity data to explain load, race predictions, and planning.',
+    featured: true,
     stack: ['TypeScript', 'Node.js', 'MCP', 'Supabase', 'React', 'Vercel'],
     tags: ['AI', 'Full-stack'],
     links: [
@@ -31,7 +33,8 @@ export const projects: Project[] = [
     category: 'Full-stack App',
     year: '2026',
     summary:
-      'Explainable comic reading paths for people who do not know where to start. A character query — or a pairing like Spider-Man + Daredevil — becomes a ranked entry point with factual reasons attached, built on normalized ComicVine data in Postgres with multi-character set-intersection answered in SQL. Ranking is deterministic and database-backed: the model may interpret intent, but issue numbers and reading order come from verified records.',
+      'I love comics, so I made a tool that helps people find where to start and discover good runs without guessing their way through decades of issues.',
+    featured: true,
     stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Supabase', 'Tailwind'],
     tags: ['Full-stack'],
     links: [
@@ -46,6 +49,7 @@ export const projects: Project[] = [
     year: '2026',
     summary:
       'Digital time capsule with server-enforced locking: sealed messages, private archives, email sharing, OTP verification, and scheduled notification emails.',
+    featured: true,
     stack: ['React', 'TypeScript', 'Supabase', 'Vercel', 'Resend'],
     tags: ['Full-stack'],
     links: [
@@ -60,6 +64,7 @@ export const projects: Project[] = [
     year: '2026',
     summary:
       'Browser extension generating personalized fit-risk scores on fashion product pages — sizing recommendations derived from body measurements, brand history, and web-sourced evidence.',
+    featured: true,
     stack: ['JavaScript', 'Chrome MV3', 'Node.js', 'Firecrawl'],
     tags: ['AI', 'Full-stack'],
     links: [

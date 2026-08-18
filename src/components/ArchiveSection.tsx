@@ -57,31 +57,57 @@ export default function ArchiveSection() {
   const sectionRef = useScrollReveal<HTMLDivElement>()
   const [activeTag, setActiveTag] = useState('All')
   const [openId, setOpenId] = useState<string | null>(null)
+  const [showAll, setShowAll] = useState(false)
 
   const filtered = activeTag === 'All'
     ? projects
     : projects.filter((p) => p.tags.includes(activeTag))
+  const featured = filtered.filter((project) => project.featured)
+  const moreProjects = filtered.filter((project) => !project.featured)
+  const visibleProjects = showAll ? filtered : (featured.length > 0 ? featured : filtered)
 
   return (
     <section id="archive" className={`section-border section-pad`}>
       <div className="container" ref={sectionRef}>
         <div className={styles.header}>
-          <h2 className={styles.sectionLabel}>02 / Archive</h2>
-          <div className={styles.filters}>
-            {allTags.map((tag) => (
+          <div className={styles.headerCopy}>
+            <h2 className={styles.sectionLabel}>02 / Projects</h2>
+            <p className={styles.sectionIntro}>Best work first. Expand for the rest.</p>
+          </div>
+          <div className={styles.headerControls}>
+            <div className={styles.filters}>
+              {allTags.map((tag) => (
+                <button
+                  key={tag}
+                  className={`${styles.filter} ${activeTag === tag ? styles.filterActive : ''}`}
+                  onClick={() => {
+                    setActiveTag(tag)
+                    setOpenId(null)
+                    setShowAll(false)
+                  }}
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
+
+            {moreProjects.length > 0 && (
               <button
-                key={tag}
-                className={`${styles.filter} ${activeTag === tag ? styles.filterActive : ''}`}
-                onClick={() => { setActiveTag(tag); setOpenId(null) }}
+                className={styles.expandButton}
+                onClick={() => {
+                  setShowAll((value) => !value)
+                  setOpenId(null)
+                }}
+                aria-expanded={showAll}
               >
-                {tag}
+                {showAll ? 'Show fewer' : `Show ${moreProjects.length} more`}
               </button>
-            ))}
+            )}
           </div>
         </div>
 
         <div className={styles.list}>
-          {filtered.map((project) => (
+          {visibleProjects.map((project) => (
             <ProjectRow
               key={project.id}
               project={project}

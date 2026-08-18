@@ -7,6 +7,11 @@
   gap: var(--space-sm);
 }
 
+.headerCopy {
+  display: grid;
+  gap: 0.45rem;
+}
+
 .sectionLabel {
   font-family: var(--font-sans);
   font-size: 11px;
@@ -14,6 +19,18 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
+}
+
+.sectionIntro {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.headerControls {
+  display: grid;
+  justify-items: end;
+  gap: 0.75rem;
 }
 
 .filters {
@@ -52,6 +69,22 @@
   height: 4px;
   border-radius: 50%;
   background: var(--signal);
+}
+
+.expandButton {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--line);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.expandButton:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 /* List */
@@ -216,6 +249,11 @@
 }
 
 @media (max-width: 736px) {
+  .headerControls {
+    width: 100%;
+    justify-items: start;
+  }
+
   .rowHeader {
     grid-template-columns: 1fr auto;
     gap: 0.5rem;
