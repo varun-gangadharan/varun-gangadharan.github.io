@@ -20,7 +20,7 @@
       if (useProductionBundle) {
         const stylesheet = document.createElement("link");
         stylesheet.rel = "stylesheet";
-        stylesheet.href = "/site-assets/app.css?v=6e59116a02";
+        stylesheet.href = "/site-assets/app.css?v=15c8b775c0";
         document.head.appendChild(stylesheet);
       }
     </script>
@@ -36,7 +36,7 @@
       ]);
 
       const useProductionBundle = productionHosts.has(window.location.hostname);
-      const entry = useProductionBundle ? "/site-assets/app.js?v=ee49c8156a" : "/src/main.tsx";
+      const entry = useProductionBundle ? "/site-assets/app.js?v=2d1a92bd3c" : "/src/main.tsx";
 
       import(entry);
     </script>

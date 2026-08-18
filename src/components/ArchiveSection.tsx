@@ -72,7 +72,6 @@ export default function ArchiveSection() {
         <div className={styles.header}>
           <div className={styles.headerCopy}>
             <h2 className={styles.sectionLabel}>02 / Projects</h2>
-            <p className={styles.sectionIntro}>Best work first. Expand for the rest.</p>
           </div>
           <div className={styles.headerControls}>
             <div className={styles.filters}>
