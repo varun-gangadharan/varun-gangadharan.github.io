@@ -147,8 +147,18 @@
     margin-bottom: var(--space-sm);
   }
 
+  .experienceHeader {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
   .experienceRole {
     font-size: 18px;
+  }
+
+  .experienceBlurb {
+    font-size: 13px;
+    line-height: 1.65;
   }
 
   .skillGroups {

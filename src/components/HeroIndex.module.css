@@ -272,6 +272,7 @@
 
   .tagline {
     max-width: none;
+    font-size: 13px;
   }
 
   .meta {
