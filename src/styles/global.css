@@ -134,3 +134,18 @@ a[target="_blank"]::after {
 a[target="_blank"]:hover::after {
   opacity: 1;
 }
+
+/* ── Mobile layout corrections ──
+   `.section-pad` and `.container` were both applying `--space-md` (32px) of
+   horizontal padding, so nested sections lost 128px of a 390px viewport.
+   On small screens the container owns the gutter and the section owns only
+   the vertical rhythm. */
+@media (max-width: 736px) {
+  .section-pad {
+    padding: var(--space-lg) 0;
+  }
+
+  .container {
+    padding: 0 var(--gutter);
+  }
+}

@@ -81,8 +81,15 @@
 }
 
 @media (max-width: 736px) {
+  /* All five labels plus the theme toggle did not fit at 390px, so CONTACT
+     was clipped under the toggle. Tighter type + gaps make the row fit. */
+  .inner {
+    padding: 0 var(--gutter);
+    gap: 0.5rem;
+  }
+
   .links {
-    gap: var(--space-sm);
+    gap: 0.6rem;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -92,7 +99,30 @@
     display: none;
   }
 
-  .inner {
-    padding: 0 var(--space-sm);
+  .link {
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    padding: 0.9rem 0;
+    white-space: nowrap;
+  }
+
+  .link::after {
+    bottom: 0.65rem;
+  }
+
+  /* The word LIGHT/DARK is the widest single item in the bar; a glyph frees
+     the ~40px the five section labels need at 360px. aria-label still
+     carries the accessible name. */
+  .toggle {
+    font-size: 0;
+    padding: 0.9rem 0 0.9rem 0.5rem;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .toggle::before {
+    content: '\25D1';
+    font-size: 15px;
+    line-height: 1;
   }
 }

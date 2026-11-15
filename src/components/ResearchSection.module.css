@@ -150,10 +150,14 @@
 }
 
 @media (max-width: 736px) {
+  .sectionLabel {
+    margin-bottom: var(--space-md);
+  }
+
   .rowHeader {
-    grid-template-columns: 1fr auto;
-    gap: 0.5rem;
-    padding: 1rem 0;
+    grid-template-columns: 1fr auto auto;
+    gap: 0.75rem;
+    padding: 0.9rem 0;
   }
 
   .rowId,
@@ -162,10 +166,23 @@
   }
 
   .rowTitle {
-    font-size: 18px;
+    font-size: 19px;
+  }
+
+  .rowArrow {
+    width: 1.25rem;
   }
 
   .detailInner {
     padding-left: 0;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    gap: 0.35rem 1.25rem;
+  }
+
+  .paperLink {
+    padding: 0.45rem 0;
   }
 }

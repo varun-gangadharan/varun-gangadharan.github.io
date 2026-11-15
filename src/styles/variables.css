@@ -15,6 +15,7 @@
   --space-lg: 4rem;
   --space-xl: 8rem;
 
+  --gutter: 1.25rem;
   --max-width: 1200px;
   --nav-height: 3.5rem;
 }

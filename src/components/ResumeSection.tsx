@@ -11,8 +11,25 @@ export default function ResumeSection() {
         <h2 className={styles.sectionLabel}>04 / Resume</h2>
 
         <p className={styles.statement}>
-          Software engineer focused on AI systems, full-stack applications, and applied research.
+          Software engineer focused on backend systems, secrets infrastructure, and AI integrations — looking for a small, in-person team where I own a production platform end to end.
         </p>
+
+        {profile.experience.length > 0 && (
+          <div className={styles.experienceBlock}>
+            <h3 className={styles.experienceHeading}>Experience</h3>
+            {profile.experience.map((exp) => (
+              <div key={exp.company} className={styles.experienceItem}>
+                <div className={styles.experienceHeader}>
+                  <span className={styles.experienceRole}>
+                    {exp.title}
+                  </span>
+                  <span className={styles.experienceDates}>{exp.dates}</span>
+                </div>
+                <p className={styles.experienceBlurb}>{exp.blurb}</p>
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className={styles.skillGroups}>
           {profile.skills.map((group) => (

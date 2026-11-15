@@ -17,7 +17,7 @@ export const projects: Project[] = [
     category: 'Platform + MCP Server',
     year: '2026',
     summary:
-      'I love running, so I built a training dashboard and MCP server that use my real activity data to explain load, race predictions, and planning.',
+      'Training dashboard and MCP server that pull real Strava activity data (200+ runs) to surface load trends, race predictions, and weekly planning — RunCoach exposes these as LLM-callable tools for natural-language coaching.',
     featured: true,
     stack: ['TypeScript', 'Node.js', 'MCP', 'Supabase', 'React', 'Vercel'],
     tags: ['AI', 'Full-stack'],
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     category: 'Full-stack App',
     year: '2026',
     summary:
-      'I love comics, so I made a tool that helps people find where to start and discover good runs without guessing their way through decades of issues.',
+      'Comic-reading guide covering 50+ curated runs across Marvel and DC — helps readers find a starting point and discover arcs without guessing through decades of issues.',
     featured: true,
     stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Supabase', 'Tailwind'],
     tags: ['Full-stack'],
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     category: 'AI System',
     year: '2024',
     summary:
-      'Deficiency-aware nutrition assistant using retrieval-augmented generation to produce cited dietary guidance.',
+      'Deficiency-aware nutrition assistant using retrieval-augmented generation over 1,200+ food entries to produce cited dietary guidance.',
     stack: ['OpenAI API', 'LlamaIndex', 'RAG', 'Nutrition Data'],
     tags: ['AI', 'Research', 'NLP'],
     links: [
@@ -122,6 +122,21 @@ export const projects: Project[] = [
     tags: ['AI', 'NLP', 'Full-stack'],
     links: [
       { label: 'GitHub', url: 'https://github.com/varun-gangadharan/twitter-scraping-bot' },
+    ],
+  },
+  {
+    id: '009',
+    title: 'Undo for Agents',
+    category: 'AI Infrastructure',
+    year: '2026',
+    summary:
+      'A rewindable agent sandbox: every command forks a microVM checkpoint, letting users restore the full environment before a mistake. The public demo runs offline by default; live sessions use each visitor’s revocable keys in browser-session memory only.',
+    featured: true,
+    stack: ['Python', 'Streamlit', 'MCP', 'Archil', 'Anthropic'],
+    tags: ['AI', 'Full-stack'],
+    links: [
+      { label: 'Live demo', url: 'https://undo-for-agents.streamlit.app/' },
+      { label: 'GitHub', url: 'https://github.com/varun-gangadharan/undo-for-agents' },
     ],
   },
 ]

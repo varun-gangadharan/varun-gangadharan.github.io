@@ -1,5 +1,6 @@
 .hero {
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,54 +214,88 @@
 
 /* ── Responsive ── */
 @media (max-width: 980px) {
+  /* A full-viewport hero left a large dead band under the rail on tablets. */
+  .hero {
+    min-height: auto;
+    padding-bottom: var(--space-md);
+  }
+
   .portrait {
     height: 50vh;
+    height: 50svh;
   }
 
   .nameOverlay {
     bottom: var(--space-md);
+  }
+
+  .scrollHint {
+    padding-top: var(--space-md);
   }
 }
 
 @media (max-width: 736px) {
   .hero {
     min-height: auto;
+    padding-bottom: 0;
   }
 
   .portrait {
-    height: 45vh;
-    object-position: center 30%;
+    height: 52vh;
+    height: 52svh;
+    object-position: center 28%;
   }
 
   .nameOverlay {
-    bottom: var(--space-sm);
-    left: var(--space-sm);
+    bottom: var(--space-md);
+    left: var(--gutter);
+    right: var(--gutter);
   }
 
   .firstName {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .lastName {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .rail {
     flex-direction: column;
-    gap: var(--space-sm);
-    padding: var(--space-sm) var(--space-sm) 0;
+    gap: 0.75rem;
+    padding: var(--space-sm) var(--gutter) 0;
   }
 
   .railRight {
     text-align: left;
   }
 
+  .tagline {
+    max-width: none;
+  }
+
   .meta {
     justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .meta .sep {
+    display: none;
+  }
+
+  .meta a {
+    padding: 0.4rem 0;
   }
 
   .phone {
-    margin-bottom: 0.35rem;
+    margin-bottom: 0;
+    padding: 0.4rem 0;
+  }
+
+  .location {
+    padding-top: 0.25rem;
   }
 
   .scrollHint {

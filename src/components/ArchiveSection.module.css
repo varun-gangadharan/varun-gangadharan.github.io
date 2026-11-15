@@ -243,15 +243,31 @@
 }
 
 @media (max-width: 736px) {
+  .header {
+    margin-bottom: var(--space-md);
+  }
+
   .headerControls {
     width: 100%;
     justify-items: start;
   }
 
+  .filter {
+    padding: 0.6rem 0.7rem;
+    margin-left: -0.7rem;
+    margin-right: 0.35rem;
+  }
+
+  .expandButton {
+    padding: 0.6rem 0;
+  }
+
+  /* Three cells are rendered on mobile (title, year, toggle); a two-column
+     track pushed the +/- onto its own row. */
   .rowHeader {
-    grid-template-columns: 1fr auto;
-    gap: 0.5rem;
-    padding: 1rem 0;
+    grid-template-columns: 1fr auto auto;
+    gap: 0.75rem;
+    padding: 0.9rem 0;
   }
 
   .rowId,
@@ -260,10 +276,23 @@
   }
 
   .rowTitle {
-    font-size: 18px;
+    font-size: 19px;
+  }
+
+  .rowArrow {
+    width: 1.25rem;
   }
 
   .detailInner {
     padding-left: 0;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    gap: 0.35rem 1.25rem;
+  }
+
+  .projectLink {
+    padding: 0.45rem 0;
   }
 }

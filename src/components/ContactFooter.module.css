@@ -61,3 +61,36 @@
   padding-top: var(--space-md);
   border-top: 1px solid var(--line);
 }
+
+@media (max-width: 736px) {
+  .footer {
+    padding: var(--space-lg) 0 var(--space-md);
+  }
+
+  .sectionLabel {
+    margin-bottom: var(--space-md);
+  }
+
+  .content {
+    margin-bottom: var(--space-lg);
+  }
+
+  .email {
+    font-size: 1.25rem;
+    word-break: break-word;
+  }
+
+  /* Wrapping left a dangling separator at the end of a line. */
+  .links {
+    flex-wrap: wrap;
+    gap: 0 1.1rem;
+  }
+
+  .links .sep {
+    display: none;
+  }
+
+  .links a {
+    padding: 0.5rem 0;
+  }
+}
