@@ -26,24 +26,20 @@ export const profile = {
   ] as Experience[],
   skills: [
     {
-      group: 'AI / Agents',
-      items: ['MCP', 'LLM Tooling', 'RAG', 'OpenAI API', 'LlamaIndex', 'NLP'],
-    },
-    {
       group: 'Languages',
       items: ['Go', 'TypeScript', 'Python', 'C++', 'Java', 'SQL'],
     },
     {
-      group: 'Frontend',
-      items: ['React', 'Next.js', 'Vite', 'CSS Architecture', 'UI Systems'],
+      group: 'Infrastructure',
+      items: ['Kubernetes', 'Docker', 'Terraform', 'HashiCorp Vault', 'PostgreSQL', 'Supabase', 'Prometheus', 'Grafana'],
     },
     {
-      group: 'Backend / Infra',
-      items: ['Node.js', 'Django', 'PostgreSQL', 'Supabase', 'HashiCorp Vault', 'Kubernetes', 'Docker'],
+      group: 'AI / Agents',
+      items: ['MCP', 'LLM Tooling', 'RAG', 'OpenAI API', 'Anthropic API', 'LlamaIndex'],
     },
     {
-      group: 'Research',
-      items: ['Computer Vision', 'Cybersecurity', 'BLE Systems', 'Nutrition AI'],
+      group: 'Web',
+      items: ['React', 'Next.js', 'Node.js', 'Django', 'Tailwind'],
     },
   ],
 }

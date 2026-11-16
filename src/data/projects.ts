@@ -13,6 +13,21 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '001',
+    title: 'Undo for Agents',
+    category: 'AI Infrastructure',
+    year: '2026',
+    summary:
+      "A rewindable agent sandbox: every command forks a microVM checkpoint, letting users restore the full environment before a mistake. The public demo runs offline by default; live sessions use each visitor's revocable keys in browser-session memory only.",
+    featured: true,
+    stack: ['Python', 'Streamlit', 'MCP', 'Archil', 'Anthropic'],
+    tags: ['AI', 'Full-stack'],
+    links: [
+      { label: 'Live demo', url: 'https://undo-for-agents.streamlit.app/' },
+      { label: 'GitHub', url: 'https://github.com/varun-gangadharan/undo-for-agents' },
+    ],
+  },
+  {
+    id: '002',
     title: 'Runman + RunCoach',
     category: 'Platform + MCP Server',
     year: '2026',
@@ -28,7 +43,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '002',
+    id: '003',
     title: 'Long Box',
     category: 'Full-stack App',
     year: '2026',
@@ -43,7 +58,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '003',
+    id: '004',
     title: 'VarCapsule',
     category: 'Full-stack App',
     year: '2026',
@@ -58,7 +73,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '004',
+    id: '005',
     title: 'FitCheck',
     category: 'Chrome Extension',
     year: '2026',
@@ -72,7 +87,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '005',
+    id: '006',
     title: 'NutriGenie',
     category: 'AI System',
     year: '2024',
@@ -86,7 +101,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '006',
+    id: '007',
     title: 'Insightify',
     category: 'NLP Tool',
     year: '2024',
@@ -99,7 +114,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '007',
+    id: '008',
     title: 'BrawlMetric',
     category: 'Full-stack App',
     year: '2024',
@@ -112,7 +127,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '008',
+    id: '009',
     title: 'GeoSentiment',
     category: 'Data Pipeline',
     year: '2023',
@@ -122,21 +137,6 @@ export const projects: Project[] = [
     tags: ['AI', 'NLP', 'Full-stack'],
     links: [
       { label: 'GitHub', url: 'https://github.com/varun-gangadharan/twitter-scraping-bot' },
-    ],
-  },
-  {
-    id: '009',
-    title: 'Undo for Agents',
-    category: 'AI Infrastructure',
-    year: '2026',
-    summary:
-      'A rewindable agent sandbox: every command forks a microVM checkpoint, letting users restore the full environment before a mistake. The public demo runs offline by default; live sessions use each visitor’s revocable keys in browser-session memory only.',
-    featured: true,
-    stack: ['Python', 'Streamlit', 'MCP', 'Archil', 'Anthropic'],
-    tags: ['AI', 'Full-stack'],
-    links: [
-      { label: 'Live demo', url: 'https://undo-for-agents.streamlit.app/' },
-      { label: 'GitHub', url: 'https://github.com/varun-gangadharan/undo-for-agents' },
     ],
   },
 ]
