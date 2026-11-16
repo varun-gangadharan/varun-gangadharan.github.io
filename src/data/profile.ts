@@ -14,7 +14,7 @@ export const profile = {
   phoneHref: 'tel:+13012508286',
   github: 'https://github.com/varun-gangadharan',
   linkedin: 'https://www.linkedin.com/in/varung63/',
-  resumePdf: '/assets/varun_gangadharan_resume.pdf',
+  resumePdf: '/assets/varun_gangadharan_resume.pdf?v=20261115',
   experience: [
     {
       company: 'GEICO',
